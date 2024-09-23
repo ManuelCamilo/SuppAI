@@ -8,7 +8,7 @@
         {{/each}}
     </ul>
     <!-- Botón para iniciar el soporte IA -->
-    <button class="btn btn-primary" id="open-support">Soporte IA</button>
+    <button class="btn btn-primary" id="open-support" data-product-nombre="{{producto.nombre}}">Soporte IA</button>
     <br><br>
     <a href="/products" class="btn btn-secondary">Volver a productos</a>
     <br><br><br>
@@ -34,32 +34,53 @@
 </div>
 
 <script>
-    document.getElementById('open-support').addEventListener('click', function() {
-        // Abrir el modal para mostrar el chat
-        const chatModal = new bootstrap.Modal(document.getElementById('chatModal'));
-        chatModal.show();
+    let productoInfo = {};  // Variable global para almacenar la información del producto
+
+    // Evento para abrir el modal y capturar el producto
+    document.addEventListener('DOMContentLoaded', function() {
+        const soporteButton = document.getElementById('open-support');
+
+        soporteButton.addEventListener('click', function() {
+            const chatModal = new bootstrap.Modal(document.getElementById('chatModal'));
+            chatModal.show();
+
+            // Captura el valor de "data-product-nombre"
+            const productoNombre = this.getAttribute('data-product-nombre');
+
+            // Guardamos el nombre del producto en la variable global productoInfo
+            productoInfo = {
+                nombre: productoNombre || 'Producto desconocido',
+            };
+
+            // Mensaje de bienvenida en el chat
+            const chatBox = document.getElementById('chat-box');
+            const welcomeMessage = document.createElement('div');
+            welcomeMessage.textContent = `IA: ¡Hola! Soy el asistente de soporte de Ultrix. Estoy aquí para ayudarte con cualquier duda sobre el producto "${productoInfo.nombre}".`;
+            chatBox.appendChild(welcomeMessage);
+        });
     });
 
+    // Evento para enviar el mensaje al backend y recibir la respuesta de la IA
     document.getElementById('send-chat').addEventListener('click', function() {
         const input = document.getElementById('chat-input');
         const chatBox = document.getElementById('chat-box');
 
         // Agregar el mensaje del usuario al chat
         const userMessage = document.createElement('div');
-        userMessage.textContent = 'Tú: ' + input.value;
+        userMessage.textContent = `Tú: ${input.value}`;
         chatBox.appendChild(userMessage);
 
-        // Enviar la pregunta a la IA a través de una API
+        // Enviar la pregunta a la IA junto con la información del producto
         fetch('/products/soporte-ia', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ message: input.value })
+            body: JSON.stringify({ message: input.value, producto: productoInfo })
         })
         .then(response => response.json())
         .then(data => {
             // Mostrar la respuesta de la IA en el chat
             const iaMessage = document.createElement('div');
-            iaMessage.textContent = 'IA: ' + data.response;
+            iaMessage.textContent = `IA: ${data.response}`;
             chatBox.appendChild(iaMessage);
             chatBox.scrollTop = chatBox.scrollHeight;  // Desplazarse hacia abajo para ver el mensaje
         })
@@ -67,6 +88,6 @@
             console.error('Error al comunicarse con la IA:', err);
         });
 
-        input.value = '';  // Limpiar el input
+        input.value = '';  // Limpiar el input después de enviar
     });
 </script>

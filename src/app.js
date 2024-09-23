@@ -1,9 +1,7 @@
 import express from 'express';
-import dotenv from 'dotenv';
 import __dirname from './utils.js';
 import handlebars from 'express-handlebars';
 import productsRouter from './routers/products.router.js'
-dotenv.config();
 
 const app = express();
 
