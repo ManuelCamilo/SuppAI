@@ -1,0 +1,275 @@
+[
+    {
+        "id": 1,
+        "nombre": "Dell XPS 13",
+        "categoria": "Notebook",
+        "caracteristicas": {
+            "procesador": "Intel Core i7",
+            "ram": "16 GB",
+            "almacenamiento": "512 GB SSD",
+            "pantalla": "13.3\" FHD",
+            "sistema_operativo": "Windows 11"
+        },
+        "precio": 1299.99,
+        "stock": 10
+    },
+    {
+        "id": 2,
+        "nombre": "MacBook Air M2",
+        "categoria": "Notebook",
+        "caracteristicas": {
+            "procesador": "Apple M2",
+            "ram": "8 GB",
+            "almacenamiento": "256 GB SSD",
+            "pantalla": "13.6\" Retina",
+            "sistema_operativo": "macOS"
+        },
+        "precio": 999.99,
+        "stock": 15
+    },
+    {
+        "id": 3,
+        "nombre": "HP Spectre x360",
+        "categoria": "Notebook",
+        "caracteristicas": {
+            "procesador": "Intel Core i5",
+            "ram": "8 GB",
+            "almacenamiento": "512 GB SSD",
+            "pantalla": "14\" FHD t\u00e1ctil",
+            "sistema_operativo": "Windows 11"
+        },
+        "precio": 1099.99,
+        "stock": 8
+    },
+    {
+        "id": 4,
+        "nombre": "Lenovo ThinkPad X1 Carbon",
+        "categoria": "Notebook",
+        "caracteristicas": {
+            "procesador": "Intel Core i7",
+            "ram": "16 GB",
+            "almacenamiento": "1 TB SSD",
+            "pantalla": "14\" FHD",
+            "sistema_operativo": "Windows 11"
+        },
+        "precio": 1399.99,
+        "stock": 5
+    },
+    {
+        "id": 5,
+        "nombre": "Acer Swift 3",
+        "categoria": "Notebook",
+        "caracteristicas": {
+            "procesador": "AMD Ryzen 7",
+            "ram": "8 GB",
+            "almacenamiento": "512 GB SSD",
+            "pantalla": "14\" FHD",
+            "sistema_operativo": "Windows 11"
+        },
+        "precio": 799.99,
+        "stock": 12
+    },
+    {
+        "id": 6,
+        "nombre": "Asus ROG Strix G15",
+        "categoria": "Notebook",
+        "caracteristicas": {
+            "procesador": "Intel Core i9",
+            "ram": "32 GB",
+            "almacenamiento": "1 TB SSD",
+            "pantalla": "15.6\" FHD 144Hz",
+            "sistema_operativo": "Windows 11"
+        },
+        "precio": 1999.99,
+        "stock": 4
+    },
+    {
+        "id": 7,
+        "nombre": "Samsung Galaxy S24 Ultra",
+        "categoria": "Celular",
+        "caracteristicas": {
+            "camara": "200 MP, Zoom \u00f3ptico 10x",
+            "procesador": "Snapdragon 8 Gen 2",
+            "pantalla": "6.8\" Dynamic AMOLED 2X",
+            "bateria": "5000 mAh",
+            "almacenamiento": "512 GB"
+        },
+        "precio": 1199.99,
+        "stock": 20
+    },
+    {
+        "id": 8,
+        "nombre": "iPhone 15",
+        "categoria": "Celular",
+        "caracteristicas": {
+            "camara": "48 MP, Ultra gran angular de 12 MP, Zoom 3x",
+            "procesador": "A16 Bionic",
+            "pantalla": "6.1\" Super Retina XDR",
+            "bateria": "3279 mAh",
+            "almacenamiento": "128 GB"
+        },
+        "precio": 999.99,
+        "stock": 25
+    },
+    {
+        "id": 9,
+        "nombre": "Google Pixel 7 Pro",
+        "categoria": "Celular",
+        "caracteristicas": {
+            "camara": "50 MP, Zoom \u00f3ptico 5x",
+            "procesador": "Google Tensor G2",
+            "pantalla": "6.7\" AMOLED",
+            "bateria": "5000 mAh",
+            "almacenamiento": "256 GB"
+        },
+        "precio": 899.99,
+        "stock": 18
+    },
+    {
+        "id": 10,
+        "nombre": "OnePlus 11",
+        "categoria": "Celular",
+        "caracteristicas": {
+            "camara": "50 MP, Ultra gran angular 48 MP, Zoom \u00f3ptico 2x",
+            "procesador": "Snapdragon 8 Gen 2",
+            "pantalla": "6.7\" Fluid AMOLED",
+            "bateria": "5000 mAh",
+            "almacenamiento": "256 GB"
+        },
+        "precio": 799.99,
+        "stock": 15
+    },
+    {
+        "id": 11,
+        "nombre": "Sony WH-1000XM5",
+        "categoria": "Perif\u00e9rico",
+        "caracteristicas": {
+            "tipo": "Auriculares inal\u00e1mbricos",
+            "cancelacion_ruido": "S\u00ed",
+            "bateria": "30 horas",
+            "conexion": "Bluetooth"
+        },
+        "precio": 399.99,
+        "stock": 30
+    },
+    {
+        "id": 12,
+        "nombre": "Logitech MX Master 3",
+        "categoria": "Perif\u00e9rico",
+        "caracteristicas": {
+            "tipo": "Rat\u00f3n inal\u00e1mbrico",
+            "sensor": "Darkfield 4000 DPI",
+            "bateria": "70 d\u00edas",
+            "conexion": "Bluetooth"
+        },
+        "precio": 99.99,
+        "stock": 40
+    },
+    {
+        "id": 13,
+        "nombre": "Razer DeathAdder V2",
+        "categoria": "Perif\u00e9rico",
+        "caracteristicas": {
+            "tipo": "Rat\u00f3n para gaming",
+            "sensor": "Focus+ 20K DPI",
+            "bateria": "N/A (cable)",
+            "conexion": "USB"
+        },
+        "precio": 69.99,
+        "stock": 50
+    },
+    {
+        "id": 14,
+        "nombre": "Corsair K95 RGB Platinum",
+        "categoria": "Perif\u00e9rico",
+        "caracteristicas": {
+            "tipo": "Teclado mec\u00e1nico",
+            "interruptores": "Cherry MX Speed",
+            "retroiluminacion": "RGB",
+            "conexion": "USB"
+        },
+        "precio": 199.99,
+        "stock": 25
+    },
+    {
+        "id": 15,
+        "nombre": "LG Ultragear 27GN950",
+        "categoria": "Perif\u00e9rico",
+        "caracteristicas": {
+            "tipo": "Monitor",
+            "pantalla": "27\" UHD 144Hz",
+            "resolucion": "3840x2160",
+            "conexion": "HDMI, DisplayPort"
+        },
+        "precio": 799.99,
+        "stock": 10
+    },
+    {
+        "id": 16,
+        "nombre": "HyperX Cloud II",
+        "categoria": "Perif\u00e9rico",
+        "caracteristicas": {
+            "tipo": "Auriculares",
+            "cancelacion_ruido": "S\u00ed",
+            "conexion": "3.5mm, USB",
+            "bateria": "N/A (cable)"
+        },
+        "precio": 99.99,
+        "stock": 35
+    },
+    {
+        "id": 17,
+        "nombre": "ASUS TUF Gaming A15",
+        "categoria": "Notebook",
+        "caracteristicas": {
+            "procesador": "AMD Ryzen 9",
+            "ram": "16 GB",
+            "almacenamiento": "1 TB SSD",
+            "pantalla": "15.6\" FHD 144Hz",
+            "sistema_operativo": "Windows 11"
+        },
+        "precio": 1299.99,
+        "stock": 7
+    },
+    {
+        "id": 18,
+        "nombre": "MSI GP66 Leopard",
+        "categoria": "Notebook",
+        "caracteristicas": {
+            "procesador": "Intel Core i7",
+            "ram": "16 GB",
+            "almacenamiento": "512 GB SSD",
+            "pantalla": "15.6\" FHD 144Hz",
+            "sistema_operativo": "Windows 11"
+        },
+        "precio": 1499.99,
+        "stock": 6
+    },
+    {
+        "id": 19,
+        "nombre": "Dell Alienware m15 R6",
+        "categoria": "Notebook",
+        "caracteristicas": {
+            "procesador": "Intel Core i9",
+            "ram": "32 GB",
+            "almacenamiento": "1 TB SSD",
+            "pantalla": "15.6\" QHD 240Hz",
+            "sistema_operativo": "Windows 11"
+        },
+        "precio": 2199.99,
+        "stock": 4
+    },
+    {
+        "id": 20,
+        "nombre": "Apple Magic Keyboard",
+        "categoria": "Perif\u00e9rico",
+        "caracteristicas": {
+            "tipo": "Teclado inal\u00e1mbrico",
+            "retroiluminacion": "No",
+            "conexion": "Bluetooth",
+            "bateria": "Recargable"
+        },
+        "precio": 99.99,
+        "stock": 25
+    }
+]
